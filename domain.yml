@@ -1,0 +1,152 @@
+intents:
+- greet
+- headache_symptom_match
+- thank_you
+- inform
+- affirm
+- thankyou
+entities:
+- patient_sex
+- patient_age
+- symptom_duration
+- headache_location
+- headache_pounding
+- symptom_nausea
+- headache_pain
+- headache_tearing
+- headache_nasal
+- headache_facial
+- headache_symptom
+- symptom
+slots:
+  headache_facial:
+    type: unfeaturized
+    auto_fill: false
+  headache_location:
+    type: unfeaturized
+    auto_fill: false
+  headache_nasal:
+    type: unfeaturized
+    auto_fill: false
+  headache_pain:
+    type: unfeaturized
+    auto_fill: false
+  headache_pounding:
+    type: unfeaturized
+    auto_fill: false
+  headache_tearing:
+    type: unfeaturized
+    auto_fill: false
+  patient_age:
+    type: unfeaturized
+    auto_fill: false
+  patient_sex:
+    type: unfeaturized
+    auto_fill: false
+  requested_slot:
+    type: unfeaturized
+  symptom_duration:
+    type: unfeaturized
+    auto_fill: false
+  symptom_nausea:
+    type: unfeaturized
+    auto_fill: false
+templates:
+  utter_ask_patient_sex:
+  - text: What's your gender?
+    buttons:
+    - title: Male
+      payload: Male
+    - title: Female
+      payload: Female
+  utter_ask_patient_age:
+  - text: How old are you?
+  utter_ask_symptom_duration:
+  - text: How long have you had this symptom?
+    buttons:
+    - title: Less than 1 hour
+      payload: Less than 1 hour
+    - title: About 1 hour
+      payload: About 1 hour
+    - title: 4 - 6 hours
+      payload: 4 - 6 hours
+    - title: More than 24 hours
+      payload: More than 24 hours
+  utter_ask_headache_location:
+  - text: Where is this headache located?
+    buttons:
+    - title: One side
+      payload: One side
+    - title: All round
+      payload: All round
+  utter_ask_headache_pounding:
+  - text: Is your head pounding?
+    buttons:
+    - title: Yes
+      payload: Yes
+    - title: No
+      payload: No
+  utter_ask_symptom_nausea:
+  - text: Do you feel nauseous?
+    buttons:
+    - title: Yes
+      payload: Yes
+    - title: No
+      payload: No
+  utter_ask_headache_pain:
+  - text: Do you feel pain behind your eye?
+    buttons:
+    - title: Yes
+      payload: Yes
+    - title: No
+      payload: No
+  utter_ask_headache_tearing:
+  - text: Are you tearing?
+    buttons:
+    - title: Yes
+      payload: Yes
+    - title: No
+      payload: No
+  utter_ask_headache_nasal:
+  - text: Are you having nasal discharge?
+    buttons:
+    - title: Yes
+      payload: Yes
+    - title: No
+      payload: No
+  utter_ask_headache_facial:
+  - text: Do you feel pain on any part of your face?
+    buttons:
+    - title: Yes
+      payload: Yes
+    - title: No
+      payload: No
+  utter_slots_values:
+  - text: "I am going to send the following results of the diagnostic questions to\
+      \ a doctor, please hold on:\n - patient_sex: {patient_sex}\n - patient_age:\
+      \ {patient_age}\n - symptom_duration: {symptom_duration}\n - headache_location:\
+      \ {headache_location}\n - headache_pounding: {headache_pounding}\n - symptom_nausea:\
+      \ {symptom_nausea}\n - headache_pain: {headache_pain}\n - headache_tearing:\
+      \ {headache_tearing}\n - headache_nasal: {headache_nasal}\n - headache_facial:\
+      \ {headache_facial}\n"
+  utter_juddie_greet:
+  - text: Hello, I am Juddie, I am a smart Mobicure Health Assistant, I'll help in
+      the initial analysis of your symptoms.
+  utter_goodbye:
+  - text: Take care bye
+actions:
+- utter_goodbye
+- utter_juddie_greet
+- utter_slots_values
+- utter_ask_patient_age
+- utter_ask_patient_sex
+- utter_ask_symptom_duration
+- utter_ask_headache_location
+- utter_ask_headache_pounding
+- utter_ask_symptom_nausea
+- utter_ask_headache_pain
+- utter_ask_headache_tearing
+- utter_ask_headache_nasal
+- utter_ask_headache_facial
+forms:
+- headache_form

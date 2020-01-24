@@ -5,8 +5,6 @@
 - ye
 - uh yes
 - let's do it
-- yeah
-- uh yes
 - um yes
 - yes knocking
 - that's correct
@@ -50,10 +48,8 @@
 - hallo doctor
 - heeey doctor
 - hi hi doc
-- hey
 - hey hey doc
 - hello there
-- hi
 - hello doc
 - yo
 - hola
@@ -87,6 +83,8 @@
 - I have a [pounding](headache_pounding) [headace](headache_symptom)
 - My [eye hurts](headache_pain) and I have [headache](headache_symptom)
 - I have [headache](headache_symptom) and [pain behind my eye](headache_pain)
+- I have [headche](headache_symptom)
+- I have [heache](headache_symptom)
 
 ## intent:inform
 - [2 days](symptom_duration)
@@ -94,7 +92,6 @@
 - [6 hours](symptom_duration)
 - [24 years old ](patient_age)
 - [24](patient_age)
-- [10 years](patient_age)
 - [10 years](patient_age)
 - a [30 years](patient_age)[years](patient_age) old man
 - [man](patient_sex)

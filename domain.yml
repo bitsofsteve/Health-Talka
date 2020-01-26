@@ -1,7 +1,9 @@
+session_config:
+  session_expiration_time: 0
+  carry_over_slots_to_new_session: true
 intents:
 - greet
 - headache_symptom_match
-- thank_you
 - inform
 - affirm
 - thankyou
@@ -17,7 +19,6 @@ entities:
 - headache_nasal
 - headache_facial
 - headache_symptom
-- symptom
 slots:
   headache_facial:
     type: unfeaturized

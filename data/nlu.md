@@ -17,6 +17,7 @@
 - right on
 - i love that
 - Yes
+- No
 
 ## intent:greet
 - hey
@@ -122,6 +123,8 @@
 - [One sided](headache_location)
 - [nauseating](symptom_nausea)
 - I have [nausea](symptom_nausea)[nausea](headache_symptom)
+- More than [24 hours](symptom_duration)
+- Less than [1 hour](symptom_duration)
 
 ## intent:thankyou
 - um thank you good bye

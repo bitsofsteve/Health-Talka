@@ -1,5 +1,5 @@
 session_config:
-  session_expiration_time: 0
+  session_expiration_time: 0.0
   carry_over_slots_to_new_session: true
 intents:
 - greet
@@ -137,6 +137,8 @@ templates:
   - text: What symptom is most troubling to you today?
   utter_goodbye:
   - text: Take care bye
+  utter_follow_up:
+  - text: Are there any other symptoms you have?
 actions:
 - utter_goodbye
 - utter_juddie_greet
@@ -152,5 +154,6 @@ actions:
 - utter_ask_headache_nasal
 - utter_ask_headache_facial
 - utter_symptom_ask
+- utter_follow_up
 forms:
 - headache_form

@@ -125,6 +125,7 @@
 - I have [nausea](symptom_nausea)[nausea](headache_symptom)
 - More than [24 hours](symptom_duration)
 - Less than [1 hour](symptom_duration)
+- About [1 hour](symptom_duration)
 
 ## intent:thankyou
 - um thank you good bye

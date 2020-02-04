@@ -133,6 +133,8 @@ templates:
   utter_juddie_greet:
   - text: Hello, I am Juddie, I am a smart Mobicure Health Assistant, I'll help in
       the initial analysis of your symptoms.
+  utter_symptom_ask:
+  - text: What symptom is most troubling to you today?
   utter_goodbye:
   - text: Take care bye
 actions:
@@ -149,5 +151,6 @@ actions:
 - utter_ask_headache_tearing
 - utter_ask_headache_nasal
 - utter_ask_headache_facial
+- utter_symptom_ask
 forms:
 - headache_form

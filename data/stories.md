@@ -2,6 +2,7 @@
 
 * greet
     - utter_juddie_greet
+    - utter_symptom_ask
 * headache_symptom_match{"headache_symptom":"Headache"}
     - headache_form
     - form{"name":"headache_form"}
